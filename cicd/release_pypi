@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo
+
+
+cd ../pypi/
+
+echo
+echo "##### clone repository"
+./clone
+
+
+echo "##### bump pypi version"
+./bump
+
+
+echo "##### build the package"
+./build
+
+echo "##### build the distribution"
+./dist
+
+echo "##### upload to pypi"
+./publish
+
+echo
+echo "##### next step is to build and publish the updated software in the Google PlayMarket: make release-android"
+echo
+
+
+exit 0

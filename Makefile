@@ -12,10 +12,13 @@ main-net-config-update:
 	LC_ALL=en_US.utf-8 ansible-playbook ansible/telegraf.yml -i ansible/inventory/main -K -e "application_name=main"
 
 release-prepare:
-	@./cicd/release_prepare
+	@cd ./cicd && /bin/bash release_prepare
 
 release-start:
-	@./cicd/release_start
+	@cd ./cicd && /bin/bash release_start
 
-release-publish:
-	@sh -c "cd pypi/; ./clone; ./bump; ./build; ./dist; ./publish;"
+release-pypi:
+	@cd ./cicd && /bin/bash release_pypi
+
+release-android:
+	@cd ./cicd && /bin/bash release_android
