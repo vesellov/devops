@@ -3,7 +3,7 @@
 echo
 
 
-cd ../pypi/
+cd ./pypi/
 
 echo
 echo "##### clone repository"
