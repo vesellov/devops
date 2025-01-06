@@ -10,9 +10,13 @@ cd "${BITDUST_P2P_APP_REPO_PATH}/installer/android"
 
 echo "##### build the package"
 make
+make build_arm64_v8a
+make build_armeabi_v7a
+make build_x86_64
 
 echo
 echo "##### now go to the Goggle Dev Console, start a new release and upload the BitDustAndroid.aab file from the ${BITDUST_P2P_APP_REPO_PATH}/installer/android/bin/ folder"
+echo "##### finally upload *.apk files from ${BITDUST_P2P_APP_REPO_PATH}/installer/android/bin/ to GitHub at https://github.com/bitdust-io/p2p-app/releases/tag/alpha"
 echo
 
 
