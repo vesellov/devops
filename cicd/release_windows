@@ -5,12 +5,11 @@ if [ -z ${BITDUST_P2P_APP_REPO_PATH+x} ]; then
     exit 1;
 fi
 
-cd "${BITDUST_P2P_APP_REPO_PATH}/installer/android"
+cd "${BITDUST_P2P_APP_REPO_PATH}/installer/windows"
 
 
-echo "##### build the package"
+echo "##### build MSI file"
 make
 
-echo
 
 exit 0

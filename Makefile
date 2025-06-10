@@ -22,3 +22,12 @@ release-pypi:
 
 release-android:
 	@/bin/bash ./cicd/release_android
+
+release-windows:
+	@/bin/bash ./cicd/release_windows
+
+release-ios:
+	@/bin/bash ./cicd/release_ios
+
+release-macos:
+	@/bin/bash ./cicd/release_macos
