@@ -45,4 +45,4 @@ echo "3. modify ../bitdust.devel/CHANGELOG.txt file (copy & paste console output
 echo "4. cd ../bitdust.devops/"
 echo "5. make release-start"
 echo "6. start pull request to the master branch in the \"public\" repository and get it merged"
-echo "7. make release-publish"
+echo "7. make release-pypi"

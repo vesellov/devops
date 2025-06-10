@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -z ${BITDUST_P2P_APP_REPO_PATH+x} ]; then 
+    echo "you must provide BITDUST_P2P_APP_REPO_PATH environment variable value"
+    exit 1;
+fi
+
+cd "${BITDUST_P2P_APP_REPO_PATH}/installer/macos"
+
+
+echo "##### build DMG file"
+make
+
+
+exit 0

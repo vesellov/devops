@@ -28,7 +28,7 @@ python3 -c "import webbrowser; webbrowser.open('https://github.com/bitdust-io/pu
 
 
 echo
-echo "##### after Pull Request is merged, run: make release-publish"
+echo "##### after Pull Request is merged, run: make release-pypi"
 echo
 
 
