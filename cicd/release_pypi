@@ -24,7 +24,8 @@ echo "##### upload to pypi"
 ./publish
 
 echo
-echo "##### now multiple different operations needs to be completed to prepare, build and publish the updated software for various platforms and app markers:"
+echo "##### now multiple different operations needs to be completed to prepare, build and publish the updated software for various platforms and app markers"
+echo "##### this only needs to be done when BitDust p2p-app was updated!"
 echo "##### for MS Windows .msi file will be assembled with: make release-windows"
 echo "##### for Apple MacOS need a real MacBook, .dmg file will be assembled: make release-macos"
 echo "##### for Apple AppStore need a real MacBook to create & distribute XCode project: make release-ios"
